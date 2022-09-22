@@ -39,4 +39,10 @@ public class Procesos extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void Procesoscrear(View view) {
+        Toast.makeText(getApplicationContext(), "cambiar actividad", Toast.LENGTH_LONG);
+        Intent i = new Intent(Procesos.this,ProcesosCrearCardio.class);
+        startActivity(i);
+    }
+
 }

@@ -6,62 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="106dp"
-        android:layout_height="59dp"
-        android:background="@color/black"
-        android:backgroundTint="#FFFFFF"
-        android:onClick="onClick"
-        android:text="Inicio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Guias">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="101dp"
-        android:layout_height="59dp"
-        android:background="@color/black"
-        android:backgroundTint="#FFFFFF"
-        android:onClick="Procesos"
-        android:text="Procesos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.341"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="106dp"
+            android:layout_height="59dp"
+            android:background="@color/black"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="onClick"
+            app:icon="@drawable/hogar2"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="101dp"
-        android:layout_height="59dp"
-        android:background="@color/black"
-        android:backgroundTint="#FFFFFF"
-        android:onClick="Setting"
-        android:text="Setting"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="101dp"
+            android:layout_height="59dp"
+            android:background="@color/black"
+            android:backgroundTint="#FFFFFF"
+            android:insetLeft="3dp"
+            android:onClick="Procesos"
+            app:icon="@drawable/sin_t_tulo_2_"
+            app:iconPadding="6dp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.341"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="101dp"
-        android:layout_height="59dp"
-        android:background="@color/black"
-        android:backgroundTint="#FFFFFF"
-        android:onClick="Guias"
-        android:text="Guias"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.674"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="101dp"
+            android:layout_height="59dp"
+            android:background="@color/black"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="Guias"
+            app:icon="@drawable/info"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.674"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="101dp"
+            android:layout_height="59dp"
+            android:background="@color/black"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="Setting"
+            android:text="Setting"
+            app:icon="@drawable/tuerca"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="407dp"
-        android:layout_height="517dp"
+        android:layout_width="384dp"
+        android:layout_height="262dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
