@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Guias">
@@ -15,11 +16,9 @@
             android:id="@+id/button15"
             android:layout_width="106dp"
             android:layout_height="59dp"
-            android:background="@color/black"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="@color/black"
             android:onClick="onClick"
             app:icon="@drawable/hogar2"
-            app:iconTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -29,13 +28,11 @@
             android:id="@+id/button16"
             android:layout_width="101dp"
             android:layout_height="59dp"
-            android:background="@color/black"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="@color/black"
             android:insetLeft="3dp"
             android:onClick="Procesos"
             app:icon="@drawable/sin_t_tulo_2_"
             app:iconPadding="6dp"
-            app:iconTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.341"
@@ -45,11 +42,9 @@
             android:id="@+id/button19"
             android:layout_width="101dp"
             android:layout_height="59dp"
-            android:background="@color/black"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="@color/black"
             android:onClick="Guias"
             app:icon="@drawable/info"
-            app:iconTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.674"
@@ -59,26 +54,23 @@
             android:id="@+id/button20"
             android:layout_width="101dp"
             android:layout_height="59dp"
-            android:background="@color/black"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="@color/black"
             android:onClick="Setting"
             android:text="Setting"
             app:icon="@drawable/tuerca"
-            app:iconTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="397dp"
+            android:layout_height="552dp"
+            app:srcCompat="@drawable/inicio"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="30dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="384dp"
-        android:layout_height="262dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/inicio" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

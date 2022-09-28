@@ -8,59 +8,65 @@
     tools:context=".Procesos">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button15"
         android:layout_width="106dp"
         android:layout_height="59dp"
-        android:background="@color/black"
         android:backgroundTint="@color/black"
         android:onClick="onClick"
         app:icon="@drawable/hogar2"
-        app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button"
+        android:layout_width="106dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@color/black"
+        android:onClick="Procesoscrear"
+        app:icon="@drawable/mas2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <Button
+        android:id="@+id/button16"
         android:layout_width="101dp"
         android:layout_height="59dp"
-        android:background="@color/black"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/black"
         android:insetLeft="3dp"
         android:onClick="Procesos"
         app:icon="@drawable/sin_t_tulo_2_"
         app:iconPadding="6dp"
-        app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.341"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button19"
         android:layout_width="101dp"
         android:layout_height="59dp"
-        android:background="@color/black"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/black"
         android:onClick="Guias"
         app:icon="@drawable/info"
-        app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.674"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button20"
         android:layout_width="101dp"
         android:layout_height="59dp"
-        android:background="@color/black"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/black"
         android:onClick="Setting"
         android:text="Setting"
         app:icon="@drawable/tuerca"
-        app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -68,20 +74,13 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="409dp"
-        android:layout_height="478dp"
+        android:layout_width="404dp"
+        android:layout_height="582dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/procesos" />
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="73dp"
-        android:layout_height="73dp"
-        android:onClick="Procesoscrear"
-        app:icon="@drawable/sin_t_tulo_5_"
-        app:iconTint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
