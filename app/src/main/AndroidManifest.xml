@@ -14,22 +14,22 @@
         android:theme="@style/Theme.FitApp"
         tools:targetApi="31">
         <activity
-            android:name=".VerPropiedades"
+            android:name=".Interfaces.VerPropiedades"
             android:exported="false" />
         <activity
-            android:name=".ProcesosCrearCardio"
+            android:name=".Interfaces.ProcesosCrearCardio"
             android:exported="false" />
         <activity
-            android:name=".Setting"
+            android:name=".Interfaces.Setting"
             android:exported="false" />
         <activity
-            android:name=".Guias"
+            android:name=".Interfaces.Guias"
             android:exported="false" />
         <activity
-            android:name=".Procesos"
+            android:name=".Interfaces.Procesos"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Interfaces.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

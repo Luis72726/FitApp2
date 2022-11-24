@@ -1,0 +1,45 @@
+package com.example.fitapp.modelos;
+
+public class procesos {
+
+    private String nombre;
+    private String detalle;
+    private String opciones;
+    private Integer numeroActual;
+
+    public procesos() {
+    }
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDetalle() {
+        return detalle;
+    }
+
+    public void setDetalle(String detalle) {
+        this.detalle = detalle;
+    }
+
+    public String getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(String opciones) {
+        this.opciones = opciones;
+    }
+
+    public Integer getNumeroActual() {
+        return numeroActual;
+    }
+
+    public void setNumeroActual(Integer numeroActual) {
+        this.numeroActual = numeroActual;
+    }
+}

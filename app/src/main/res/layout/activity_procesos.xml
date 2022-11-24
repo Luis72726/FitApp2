@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="Procesoscrear"
-    tools:context=".Procesos">
+    tools:context=".Interfaces.Procesos">
 
     <Button
         android:id="@+id/button"
@@ -76,6 +76,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerId"
         android:layout_width="409dp"
         android:layout_height="600dp"
         app:layout_constraintBottom_toBottomOf="parent"

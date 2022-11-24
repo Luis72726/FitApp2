@@ -1,4 +1,4 @@
-package com.example.fitapp;
+package com.example.fitapp.Interfaces;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+
+import com.example.fitapp.R;
 
 import java.util.ArrayList;
 

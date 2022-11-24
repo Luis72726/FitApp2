@@ -1,4 +1,4 @@
-package com.example.fitapp;
+package com.example.fitapp.Interfaces;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,35 +7,37 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class Guias extends AppCompatActivity {
+import com.example.fitapp.R;
+
+public class Setting extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_guias);
+        setContentView(R.layout.activity_setting);
     }
 
     public void onClick(View view) {
         Toast.makeText(getApplicationContext(), "cambiar actividad", Toast.LENGTH_LONG);
-        Intent i = new Intent(Guias.this,MainActivity.class);
+        Intent i = new Intent(Setting.this, MainActivity.class);
         startActivity(i);
     }
 
     public void Procesos(View view) {
         Toast.makeText(getApplicationContext(), "cambiar actividad", Toast.LENGTH_LONG);
-        Intent i = new Intent(Guias.this,Procesos.class);
+        Intent i = new Intent(Setting.this,Procesos.class);
         startActivity(i);
     }
 
     public void Guias(View view) {
         Toast.makeText(getApplicationContext(), "cambiar actividad", Toast.LENGTH_LONG);
-        Intent i = new Intent(Guias.this,Guias.class);
+        Intent i = new Intent(Setting.this, Guias.class);
         startActivity(i);
     }
 
     public void Setting(View view) {
         Toast.makeText(getApplicationContext(), "cambiar actividad", Toast.LENGTH_LONG);
-        Intent i = new Intent(Guias.this,Setting.class);
+        Intent i = new Intent(Setting.this,Setting.class);
         startActivity(i);
     }
 }

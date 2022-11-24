@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProcesosCrearCardio">
+    tools:context=".Interfaces.ProcesosCrearCardio">
 
 
     <TextView
@@ -33,19 +33,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="297dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="85dp"
@@ -57,7 +44,31 @@
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.311" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupText"
+        android:layout_width="155dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382">
+
+        <RadioButton
+            android:id="@+id/radioButtonKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kilogramos" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minutos" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textView"
@@ -73,7 +84,7 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/nombreText"
         android:layout_width="297dp"
         android:layout_height="41dp"
         android:ems="10"
@@ -86,7 +97,7 @@
         app:layout_constraintVertical_bias="0.071" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/detalleText"
         android:layout_width="297dp"
         android:layout_height="41dp"
         android:ems="10"
@@ -127,27 +138,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <RadioGroup
-        android:layout_width="155dp"
-        android:layout_height="86dp"
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="296dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37">
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kilogramos" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Minutos" />
-    </RadioGroup>
+        app:layout_constraintVertical_bias="0.563" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
