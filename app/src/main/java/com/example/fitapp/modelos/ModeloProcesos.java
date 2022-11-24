@@ -1,13 +1,13 @@
 package com.example.fitapp.modelos;
 
-public class procesos {
+public class ModeloProcesos {
 
     private String nombre;
     private String detalle;
     private String opciones;
     private Integer numeroActual;
 
-    public procesos() {
+    public ModeloProcesos() {
     }
 
 

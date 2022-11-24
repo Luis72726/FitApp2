@@ -6,18 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.fitapp.Adaptador.AdaptadorJuegos;
+import com.example.fitapp.Adaptador.AdaptadorProcesos;
 import com.example.fitapp.R;
-import com.example.fitapp.modelos.procesos;
+import com.example.fitapp.modelos.ModeloProcesos;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import com.example.fitapp.Database.DataBaseQueryUsuario;
 
@@ -25,8 +21,8 @@ import com.example.fitapp.Database.DataBaseQueryUsuario;
 public class Procesos extends AppCompatActivity {
 
     RecyclerView reciclador;
-    ArrayList<procesos> listaArrayprocesos;
-    AdaptadorJuegos adapter;
+    ArrayList<ModeloProcesos> listaArrayprocesos;
+    AdaptadorProcesos adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +36,7 @@ public class Procesos extends AppCompatActivity {
 
         listaArrayprocesos = new ArrayList<>();
 
-        adapter = new AdaptadorJuegos(dbUsuarios.mostrarContactos());
+        adapter = new AdaptadorProcesos(dbUsuarios.mostrarContactos());
         reciclador.setAdapter(adapter);
 
 

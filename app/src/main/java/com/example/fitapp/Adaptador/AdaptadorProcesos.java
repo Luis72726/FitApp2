@@ -1,11 +1,8 @@
 package com.example.fitapp.Adaptador;
 
-import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,17 +10,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import com.example.fitapp.Interfaces.VerPropiedades;
 import com.example.fitapp.R;
-import com.example.fitapp.modelos.procesos;
+import com.example.fitapp.modelos.ModeloProcesos;
 
-public class AdaptadorJuegos extends RecyclerView.Adapter<AdaptadorJuegos.ViewHolderJuegos> {
+public class AdaptadorProcesos extends RecyclerView.Adapter<AdaptadorProcesos.ViewHolderJuegos> {
 
 
-    ArrayList<procesos> listaJuegos;
+    ArrayList<ModeloProcesos> listaProcesos;
 
-    public AdaptadorJuegos(ArrayList<procesos> listaJuegos) {
-        this.listaJuegos = listaJuegos;
+    public AdaptadorProcesos(ArrayList<ModeloProcesos> listaJuegos) {
+        this.listaProcesos = listaJuegos;
     }
 
     @NonNull
@@ -36,26 +32,26 @@ public class AdaptadorJuegos extends RecyclerView.Adapter<AdaptadorJuegos.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolderJuegos holder, int position) {
 
-        holder.itemNombre.setText(listaJuegos.get(position).getNombre());
-        holder.itemInformacion.setText(listaJuegos.get(position).getDetalle());
+        holder.itemNombre.setText(listaProcesos.get(position).getNombre());
+        holder.itemDetalle.setText(listaProcesos.get(position).getDetalle());
 
     }
 
     @Override
     public int getItemCount() {
-        return listaJuegos.size();
+        return listaProcesos.size();
     }
 
     public class ViewHolderJuegos extends RecyclerView.ViewHolder {
 
         //referenciar componentes gráficos
-        TextView itemNombre,itemInformacion;
+        TextView itemNombre, itemDetalle;
         public ViewHolderJuegos(@NonNull View itemView) {
             super(itemView);
-            itemNombre= (TextView)  itemView.findViewById(R.id.nombreDeLista);
-            itemInformacion = (TextView)  itemView.findViewById(R.id.detalleDeLaLista);
+            itemNombre = (TextView)  itemView.findViewById(R.id.nombreDeLista);
+            itemDetalle = (TextView)  itemView.findViewById(R.id.descripcionDeLaLista);
 
-
+            /*
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -65,6 +61,8 @@ public class AdaptadorJuegos extends RecyclerView.Adapter<AdaptadorJuegos.ViewHo
                     context.startActivity(intent);
                 }
             });
+
+             */
         }
     }
 }

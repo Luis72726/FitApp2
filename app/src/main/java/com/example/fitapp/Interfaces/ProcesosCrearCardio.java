@@ -12,7 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.fitapp.R;
-import com.example.fitapp.modelos.procesos;
+import com.example.fitapp.modelos.ModeloProcesos;
 
 import com.example.fitapp.Database.DataBaseQueryUsuario;
 
@@ -53,7 +53,7 @@ public class ProcesosCrearCardio extends AppCompatActivity {
 
             public void onClick(View view) {
 
-                procesos procesosNuevo = new procesos();
+                ModeloProcesos procesosNuevo = new ModeloProcesos();
 
                 procesosNuevo.setNombre(nombre.getText().toString());
                 procesosNuevo.setDetalle(detalle.getText().toString());

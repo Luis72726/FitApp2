@@ -7,10 +7,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.widget.Toast;
 
-import com.example.fitapp.modelos.procesos;
+import com.example.fitapp.modelos.ModeloProcesos;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class DataBaseQueryUsuario {
 
@@ -20,7 +19,7 @@ public class DataBaseQueryUsuario {
         this.context = context;
     }
 
-    public String insertarUsuario(procesos u){
+    public String insertarUsuario(ModeloProcesos u){
         String nombreUsuario=u.getNombre();
         DatabaseHelper databaseHelper = DatabaseHelper.getInstance(context);
         SQLiteDatabase sqLiteDatabase = databaseHelper.getWritableDatabase();
@@ -78,20 +77,20 @@ public class DataBaseQueryUsuario {
     }
     */
 
-    public ArrayList<procesos> mostrarContactos() {
+    public ArrayList<ModeloProcesos> mostrarContactos() {
 
         DatabaseHelper dbHelper = new DatabaseHelper(context);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        ArrayList<procesos> listaContactos = new ArrayList<>();
-        procesos contacto;
+        ArrayList<ModeloProcesos> listaContactos = new ArrayList<>();
+        ModeloProcesos contacto;
         Cursor cursorContactos;
 
         cursorContactos = db.rawQuery("SELECT * FROM " + Config.TABLA_USUARIO + " ORDER BY nombre ASC", null);
 
         if (cursorContactos.moveToFirst()) {
             do {
-                contacto = new procesos();
+                contacto = new ModeloProcesos();
                 contacto.setNombre(cursorContactos.getString(0));
                 contacto.setDetalle(cursorContactos.getString(1));
                 listaContactos.add(contacto);
